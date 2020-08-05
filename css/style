@@ -1,0 +1,280 @@
+/* USE FONT WEIGHT P/ SELECIONAR Light 200, Light 200 Italic, Bold 700, Normal 400 ou Normal 400 Italic */
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight:400;
+}
+
+/* CONFIGURAÇÃO DE ESTILO PARA AS SEÇÕES BASE: HEADER, DIV E FOOTER*/
+
+header{
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+div{
+	width: 100%;
+	background-color: #EDEDED;
+}
+
+footer{
+	text-align: left;
+	color: white;
+}
+
+/* CONFIGURAÇÃO DE ESTILO PARA AS SEÇÕES QUE COMPÕEM O DIV: "HELLO", "CITAÇÃO-CEO", "CARACTERISTICAS" E "TAGLINE" */
+/* o rodapé e o elemento Hello tem o mesmo plano de fundo */
+
+#hello,
+footer{
+	background-image: url(../img/bg_b.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#hello{
+	text-align: center;
+	color: white;
+	position: relative;
+}
+
+#citacao-CEO{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CECECE;
+	text-align: center;
+	font-size: 34px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+#caracteristicas{
+	width: 960px;
+	margin: 53px auto;
+}
+
+#tagLine{
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CECECE;
+}
+
+/* CONFIGURAÇÃO DE ESTILO PARA OS ELEMENTOS DA SEÇÃO HEADER
+	- <h2> Logo da Engine Labs </h2>
+	- <nav> Lista "menu-opcoes" </nav>
+*/
+
+#menu-opcoes{
+	position: absolute;
+	bottom: 10px;
+	right: 0;
+}
+
+#menu-opcoes li{
+	display: inline;
+	margin-left: 30px;
+}
+
+#menu-opcoes a{
+	text-decoration: none;
+}
+
+#menu-opcoes .opcao-comum{
+	color: black;
+}
+
+#opcao-DEMOS{
+	color: #005F8F;
+}
+
+#opcao-Log-in{
+	background-color: black;
+	color: white;
+	padding: 5px 25px;
+	border-radius: 20px;
+}
+
+/* CONFIGURAÇÃO DE ESTILO PARA OS ELEMENTOS DA SUBSEÇÃO "HELLO"
+	- <h1> HELLO </h1>
+	- <p> frase... </p>
+	- <a href> <img> imagens de setas </a>
+*/
+
+#hello h1{
+	font-weight: bold 700;
+	font-size: 110px;
+	margin: 0;
+	padding-top: 100px;
+}
+
+#hello p{
+	font-weight: lighter;
+	font-size: 39px;
+	margin: 0;
+	padding-bottom: 145px;
+}
+
+#hello img{
+	background-color: black;
+	padding: 10px;
+}
+
+#img-setaDireita{
+	position: absolute;
+	right: 0;
+	top: 194px;
+}
+
+#img-setaEsquerda{
+	position: absolute;
+	left: 0;
+	top: 194px;
+}
+
+/* CONFIGURAÇÃO DE ESTILO PARA OS ELEMENTOS DA SUBSEÇÃO "CITAÇÃO-CEO"
+	- <p> Parágrafo principal </p>
+	- <p> Nome do autor </p>
+*/
+
+#citacao-CEO_paragrafoPrincipal{
+	width: 960px;
+	font-weight: lighter;
+	font-style: italic;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* CONFIGURAÇÃO DE ESTILO PARA OS ELEMENTOS DA SUBSEÇÃO "CARACTERISTICAS"
+	- <ol>
+	- <li> <figure> Feature_01 + <p> texto para feature um </p> </figure> <li>
+	- <li> <figure> Feature_02 + <p> texto para feature dois </p> </figure> </li>
+	- <li> <figure> Feature_03 + <p> texto para feature três </p> </figure> </li>
+	- </ol>
+*/
+
+#caracteristicas li{
+	display: inline-block;
+}
+
+#caracteristicas ol{
+	padding: 0;
+}
+
+figcaption{
+	font-size: 20px;
+	text-align: center;
+}
+
+.caracteristicas_texto{
+	width: 238px;
+	text-align: left;
+}
+
+/* Os textos que acompanham as imagens da seção "caracteristicas" e o texto da seção "TagLine" compartilham as mesmas config. de fonte */
+.caracteristicas_texto,
+#bloco-tagLine p{
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+/* CONFIGURAÇÃO DE ESTILO PARA OS ELEMENTOS DA SUBSEÇÃO "TAGLINE"
+	- <section bloco-tagLine> possui o título: <h1>, texto: <p>, botão: <button> e imagem: <img> </section>
+
+	OBS.: o uso de uma section interna à section "tagLine" para criar o "bloco-tagLine" foi necessária visto que a largura (100%)
+	da section externa renderiza a borda superior que limita esta seção na página em relação à seção com as características, portanto 
+	a delimitação de largura (960px) do conjunto de elementos tagLine se dá na section interna.
+*/
+
+#bloco-tagLine{
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 55px;
+	padding-bottom: 65px;
+}
+
+#bloco-tagLine h1,
+#bloco-tagLine p,
+#bloco-tagLine button{
+	margin-left: 50px;
+	float: left;
+}
+
+#bloco-tagLine p,
+#bloco-tagLine button{
+	clear: left;
+}
+
+#bloco-tagLine h1{
+	margin-top: 75px;
+	margin-bottom: 15px;
+	font-size: 30px;
+}
+
+#bloco-tagLine p{
+	width: 422px;
+	margin-bottom: 15px;
+}
+
+#bloco-tagLine button{
+	background-image: url(../img/arrow_accordance.png);
+    background-repeat: no-repeat;
+	background-position: 185px center;
+	margin: 20px 0 25px 134px;
+	font-size: 20px;
+	background-color: black;
+	color: white;
+	padding: 10px 65px 10px 48px;
+	border-radius: 25px;
+}
+
+#bloco-tagLine img{
+	margin: 25px 0 25px 23px;
+}
+
+/* CONFIGURAÇÃO DE ESTILO PARA OS ELEMENTOS DA SEÇÃO FOOTER
+	- <nav> bloco de listas que compõe o footer </nav>
+	- <p> parágrafo copyright </p>
+*/
+
+#bloco-footer{
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 130px;
+}
+
+footer ol{
+	padding: 0;
+}
+
+footer ul{
+	width: 115px;
+	list-style-type: none;
+}
+
+.listaRodape{
+	display: inline-block;
+}
+
+footer li p{
+	font-weight: normal;
+	color: #EDEDED;
+}
+
+footer li a{
+	text-decoration: none;
+	color: #CECECE;
+	opacity: 0.6;
+	line-height: 25px;
+}
+
+#paragrafo-copyright{
+	opacity: 0.3;
+	color: #CECECE;
+	width: 960px;
+	margin: 0 auto;
+	padding-left: 80px;
+	padding-bottom: 15px;
+}
